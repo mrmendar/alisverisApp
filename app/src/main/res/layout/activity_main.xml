@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/hsglTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hoşgeldin"
+        android:textColor="@color/black"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="680dp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/userNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/hsglTxt"
+        app:layout_constraintLeft_toLeftOf="@+id/hsglTxt"
+        android:text="Tuna karaköse"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/bell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/hsglTxt"
+        app:layout_constraintBottom_toTopOf="@+id/userNameTxt"
+        android:src="@drawable/bell">
+
+    </ImageView>
+    <ImageView
+        android:id="@+id/redDotImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/userNameTxt"
+        app:layout_constraintBottom_toTopOf="@id/userNameTxt"
+        android:src="@drawable/red_circle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="225dp">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:text="1"
+        app:layout_constraintRight_toRightOf="@id/redDotImg"
+        app:layout_constraintLeft_toLeftOf="@id/redDotImg"
+        app:layout_constraintBottom_toBottomOf="@id/redDotImg"
+        app:layout_constraintTop_toTopOf="@id/redDotImg">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/srchEdtTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/search_icon"
+        android:drawablePadding="8dp"
+        android:hint="Bura değişecek"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userNameTxt">
+
+    </EditText>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/addLyt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toBottomOf="@id/srchEdtTxt"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/red_banner"
+
+        >
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="@id/addLyt"
+            android:layout_marginStart="16dp"
+            android:text="BURAYA YAZILACAK ALAN BUKADAR"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintTop_toTopOf="@id/addLyt"
+            app:layout_constraintBottom_toBottomOf="@id/addLyt"
+            app:layout_constraintWidth_percent="0.55"
+            android:textSize="21sp"
+            >
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/stnAl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/addLyt"
+        app:layout_constraintRight_toRightOf="@id/addLyt"
+        app:layout_constraintTop_toBottomOf="@id/addLyt"
+        android:layout_marginTop="2dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.04"
+        android:text="Satın Al"
+        android:gravity="center"
+        android:background="@drawable/orange_button_background"
+        android:textColor="@color/white"
+        >
+
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/kizImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/girl"
+        app:layout_constraintRight_toRightOf="@id/addLyt"
+        app:layout_constraintBottom_toBottomOf="@id/addLyt"
+        >
+
+    </ImageView>
+    <TextView
+        android:id="@+id/midText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/stnAl"
+        android:text="Popüler Kategoriler keşfet"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="19sp">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundcns"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/btn_cat_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/midText"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/ktgrBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/backgroundcns"
+            app:layout_constraintEnd_toEndOf="@id/backgroundcns"
+            app:layout_constraintStart_toStartOf="@id/backgroundcns"
+            app:layout_constraintTop_toTopOf="@id/backgroundcns"
+
+
+            app:srcCompat="@drawable/cat1">
+
+        </ImageView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/pctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/backgroundcns"
+        app:layout_constraintStart_toStartOf="@id/backgroundcns"
+        app:layout_constraintEnd_toEndOf="@id/backgroundcns"
+        android:text="PC">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundcns2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/btn_cat_background"
+        app:layout_constraintLeft_toRightOf="@id/backgroundcns"
+        app:layout_constraintTop_toBottomOf="@id/midText"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/ktgrBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/backgroundcns2"
+            app:layout_constraintEnd_toEndOf="@id/backgroundcns2"
+            app:layout_constraintStart_toStartOf="@id/backgroundcns2"
+            app:layout_constraintTop_toTopOf="@id/backgroundcns2"
+
+
+            app:srcCompat="@drawable/cat2">
+
+        </ImageView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/mobiltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/backgroundcns2"
+        android:text="Telefon"
+        app:layout_constraintStart_toStartOf="@id/backgroundcns2"
+        app:layout_constraintEnd_toEndOf="@id/backgroundcns2"
+        >
+
+    </TextView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundcns3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_cat_background"
+        app:layout_constraintTop_toBottomOf="@id/midText"
+        tools:ignore="MissingConstraints2"
+        app:layout_constraintLeft_toRightOf="@id/backgroundcns2"
+        android:layout_marginStart="24dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/ktgrBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/backgroundcns3"
+            app:layout_constraintEnd_toEndOf="@id/backgroundcns3"
+            app:layout_constraintStart_toStartOf="@id/backgroundcns3"
+            app:layout_constraintTop_toTopOf="@id/backgroundcns3"
+
+
+            app:srcCompat="@drawable/cat3">
+        </ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/kulakliktxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kulaklıklar"
+        app:layout_constraintTop_toBottomOf="@id/backgroundcns3"
+        app:layout_constraintStart_toStartOf="@id/backgroundcns3"
+        app:layout_constraintEnd_toEndOf="@id/backgroundcns3"
+        >
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundcns4"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_cat_background"
+        app:layout_constraintTop_toBottomOf="@id/midText"
+        tools:ignore="MissingConstraints2"
+        app:layout_constraintLeft_toRightOf="@id/backgroundcns3"
+        android:layout_marginStart="24dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/ktgrBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/backgroundcns4"
+            app:layout_constraintEnd_toEndOf="@id/backgroundcns4"
+            app:layout_constraintStart_toStartOf="@id/backgroundcns4"
+            app:layout_constraintTop_toTopOf="@id/backgroundcns4"
+
+
+            app:srcCompat="@drawable/cat4">
+        </ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<TextView
+    android:id="@+id/oyuntxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/backgroundcns4"
+    app:layout_constraintStart_toStartOf="@id/backgroundcns4"
+    app:layout_constraintEnd_toEndOf="@id/backgroundcns4"
+    android:text="Oyun">
+
+</TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundcns5"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_cat_background"
+        app:layout_constraintTop_toBottomOf="@id/midText"
+        tools:ignore="MissingConstraints2"
+        app:layout_constraintLeft_toRightOf="@id/backgroundcns4"
+        android:layout_marginStart="24dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/ktgrBtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/backgroundcns5"
+            app:layout_constraintEnd_toEndOf="@id/backgroundcns5"
+            app:layout_constraintStart_toStartOf="@id/backgroundcns5"
+            app:layout_constraintTop_toTopOf="@id/backgroundcns5"
+
+
+            app:srcCompat="@drawable/cat5">
+        </ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/hepsitxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/backgroundcns5"
+        app:layout_constraintStart_toStartOf="@id/backgroundcns5"
+        app:layout_constraintEnd_toEndOf="@id/backgroundcns5"
+        android:text="Hepsi">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pplrtxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Popüler Ürünler"
+        app:layout_constraintTop_toBottomOf="@id/pctxt"
+        android:layout_marginTop="12dp"
+        app:layout_constraintWidth_percent="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Hepsini gör"
+        app:layout_constraintTop_toTopOf="@id/pplrtxt"
+        app:layout_constraintLeft_toRightOf="@id/pplrtxt"
+        app:layout_constraintBottom_toBottomOf="@id/pplrtxt"
+        android:textColor="@color/red"
+        >
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pplrtxt"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+        tools:ignore="MissingConstraints">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_1"
+
+
+            >
+
+
+        </ImageView>
+
+
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
